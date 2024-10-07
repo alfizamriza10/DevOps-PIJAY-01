@@ -98,6 +98,7 @@ jobs:
       uses: docker/build-push-action@v6
       with:
         context: .
-        file: ./Dockerfile
+        file: ./Dockerfile # Adjust this path if your Dockerfile is in a different location
         push: true
         tags: alfizamriza/devops-pijay-01:${{ github.sha }}-latest
+    
